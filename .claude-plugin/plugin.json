@@ -1,0 +1,42 @@
+{
+  "name": "voice-reply",
+  "version": "1.0.0",
+  "description": "Claude ends each reply with a short spoken line; play it with a button, or let the session speak it by itself. Gemini TTS, with the system voice as fallback. Windows, macOS, Linux.",
+  "author": { "name": "wowwowagency" },
+  "homepage": "https://github.com/wowwowagency/claude-voice-reply",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "gemini_api_key": {
+      "type": "string",
+      "title": "Gemini API key",
+      "description": "From aistudio.google.com/apikey. Empty: the GEMINI_API_KEY environment variable, then ~/.claude/voice/gemini.key, then the system voice.",
+      "sensitive": true,
+      "required": false
+    },
+    "gemini_voice": {
+      "type": "string",
+      "title": "Gemini voice",
+      "description": "A Gemini TTS voice name, e.g. Achird, Kore, Puck, Charon, Aoede.",
+      "default": "Achird"
+    },
+    "gemini_model": {
+      "type": "string",
+      "title": "Gemini TTS model",
+      "description": "The Gemini text-to-speech model.",
+      "default": "gemini-3.8-flash-lite-tts"
+    },
+    "style": {
+      "type": "string",
+      "title": "Speaking style",
+      "description": "How the Gemini voice should sound, in plain words.",
+      "default": "calm, warm and friendly, conversational, like a colleague giving a quick spoken update; natural pace"
+    },
+    "ui_language": {
+      "type": "string",
+      "title": "Button language",
+      "description": "Language of the buttons and messages: en or ru.",
+      "options": ["en", "ru"],
+      "default": "en"
+    }
+  }
+}

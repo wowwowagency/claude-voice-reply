@@ -1,0 +1,5 @@
+{
+  "name": "claude-voice-reply",
+  "owner": { "name": "wowwowagency" },
+  "plugins": [{ "name": "voice-reply", "source": "./" }]
+}
