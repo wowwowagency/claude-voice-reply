@@ -52,7 +52,9 @@ voice, turn on billing for the key's project in AI Studio — short spoken lines
 
 ## Options
 
-Set at install, or later in `/config` (terminal) under the plugin's name:
+Set at install, or later at the Claude Code prompt with
+`/plugin configure voice-reply@claude-voice-reply`, or from a shell with
+`claude plugin install voice-reply@claude-voice-reply --config ui_language=ru`:
 
 | Option | Default | What it does |
 | --- | --- | --- |
